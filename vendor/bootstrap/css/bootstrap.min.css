@@ -174,8 +174,8 @@ a {
 }
 
 a:hover {
-    color: #cccccc;
-    text-decoration: underline
+    color: #ffffff;
+    text-decoration: none;
 }
 
 a:not([href]) {
@@ -5026,6 +5026,7 @@ input[type=submit].btn-block {
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
+    color:black;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem

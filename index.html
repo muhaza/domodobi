@@ -29,18 +29,19 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              
-              </button>
+
+            </button>
 
             <a class="navbar-brand" href="#">DOMO DOBI</a>
             <div class="collapse navbar-left navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -69,18 +70,25 @@
                 <h2 style="font-family: 'Oswald';">DOMO DOBI</h2>
                 <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation" style="border-radius:0;border:solid white 1px;">
-                        <a class="nav-link bg-info active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">📋 Order History</a>
+                        <a class="nav-link bg-info active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                            role="tab" aria-controls="pills-home" aria-selected="true">📋 Order History</a>
                     </li>
                     <li class="nav-item" role="presentation" style="border-radius:0;border:solid white 1px;">
-                        <a class="nav-link bg-info" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">🛒 My Cart</a>
+                        <a class="nav-link bg-info" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                            role="tab" aria-controls="pills-profile" aria-selected="false">🛒 My Cart</a>
                     </li>
 
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</div>
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        This is a template that is great for small businesses. It doesn't have too much fancy flare to
+                        it, but it makes a great use of the standard Bootstrap core components. Feel free to use this
+                        template for any project you want!</div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</div>
+                        This is a template that is great for small businesses. It doesn't have too much fancy flare to
+                        it, but it makes a great use of the standard Bootstrap core components. Feel free to use this
+                        template for any project you want!</div>
 
                 </div>
             </div>
@@ -89,45 +97,54 @@
         </div>
         <!-- /.row -->
 
-
-
         <style>
             .card-horizontal {
                 display: flex;
                 flex: 1 1 auto;
             }
-            
+
             .img-card {
                 width: 100px;
             }
 
             .card {
-                margin-bottom:0.3em;
-                transition: box-shadow 0.5s;
-                
+                margin-bottom: 0.3em;
+                /* transition: box-shadow 0.5s; */
+
             }
+
             .card:hover {
                 margin-bottom: 0.5em;
-                box-shadow: 0px 2px 5px 0px #117a8b75;
+                /* box-shadow: 0px 2px 5px 0px #117a8b75; */
+            }
+
+            a.card {
+                text-decoration: none;
+            }
+
+            a.card:hover {
+                text-decoration: none;
             }
         </style>
 
         <div class="row">
             <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-horizontal">
-                        <div class="img-square-wrapper">
-                            <img class="img-card" src="img/Frame1.jpg" alt="Card image cap">
+                <a data-toggle="modal" data-target="#modalMen">
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="img-card" src="img/Frame1.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">MEN’S WEAR</h5>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">MEN’S WEAR</h5>
-                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                        </div>
-                    </div>
-                    <!-- <div class="card-footer">
+                        <!-- <div class="card-footer">
                         <small class="text-muted">Last updated 3 mins ago</small>
                     </div> -->
-                </div>
+                    </div>
+                </a>
 
                 <div class="card">
                     <div class="card-horizontal">
@@ -173,6 +190,37 @@
         </div>
 
     </footer>
+
+    <!-- Card Modal Element-->
+    <style>
+        .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0rem;
+    height: 100%;
+    pointer-events: none;
+}
+    </style>
+    <div class="modal fade modal-lg " id="modalMen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
