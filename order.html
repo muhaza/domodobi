@@ -116,7 +116,7 @@
             }
         </style>
 
-        <!--//accordion-->
+        <!--? accordion-->
 
         <style>
             .card-header {
@@ -274,6 +274,7 @@
     </footer>
 
     <!-- Card Modal Element-->
+    <!-- Card Modal Element-->
     <style>
         .modal-dialog {
             margin: 0 !important;
@@ -284,6 +285,13 @@
                 max-width: none;
                 margin: 1.75rem auto;
             }
+        }
+        
+        .modal-body {
+            position: relative;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 0rem;
         }
     </style>
     <div class="modal fade modal-lg " id="modalMen2" tabindex="-1" role="dialog" aria-labelledby="exampleModalmanLabel" aria-hidden="true">
@@ -305,7 +313,27 @@
             </div>
         </div>
     </div>
-
+    <!--? modal cart-->
+    <div class="modal fade modal-lg " id="modalMen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header bg-info text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+            </div>
+            <div class="modal-body" style="height:800px">
+                <div class="embed-responsive embed-responsive-16by9" style="height:500px">
+                    <iframe class="embed-responsive-item" src="./cart.html"></iframe>
+                </div>
+            </div>
+            <!-- <div class="modal-footer" style="background-color: white;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info">Save changes</button>
+            </div> -->
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript -->
 
     <script src="vendor/jquery/jquery.min.js"></script>
