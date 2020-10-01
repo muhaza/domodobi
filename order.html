@@ -29,12 +29,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-
+            <a class="navbar-brand" href="index.html">🡠LAUNDRY</a>
+            <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#modalMen">
+                    <span class="">🛒</span>
                 </button>
 
-            <a class="navbar-brand" href="#">DOBI LAYAN DIRI</a>
+
             <div class="collapse navbar-left navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -62,12 +62,12 @@
         <!-- Heading Row -->
         <div class="row align-items-center my-2">
             <div class="col-lg-12">
-                <img src="img/banner-1.jpg" width="100%" class="img-fluid rounded mt-5" alt="Responsive image">
+                <img src="/img/image8.png" width="100%" class="img-fluid rounded mt-5" alt="Responsive image">
             </div>
 
             <div class="col-lg-12">
                 <h2 style="font-family: 'Oswald';">DOMO LAYAN DIRI</h2>
-                <ul class="nav nav-pills nav-fill">
+                <!-- <ul class="nav nav-pills nav-fill">
                     <li class="nav-item">
                         <a class="nav-link active bg-info text-light" style="border:1px white solid" href="#">📋 Order
                                                             History</a>
@@ -75,7 +75,7 @@
                     <li class="nav-item">
                         <a class="nav-link bg-info text-light" style="border:1px white solid" href="#">🛒 My Cart</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
             <!-- /.col-lg-12 -->
 
@@ -117,11 +117,11 @@
                     <div class="card">
                         <div class="card-horizontal">
                             <div class="img-square-wrapper">
-                                <img class="img-card" src="img/Frame1.jpg" alt="Card image cap">
+                                <img class="img-card" src="img/image9.png" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">MEN’S WEAR</h5>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <!-- <h5 class="card-title">MEN’S WEAR</h5> -->
+                                <p class="card-text" style="font-size: small;">SHIRT(SHORT SLEEVES)<br> LAUNDRY - RM8.00 DRYCLEAN RM6.00<br> IRONING - RM10.00</p>
                             </div>
                         </div>
                         <!-- <div class="card-footer">
@@ -134,11 +134,11 @@
                     <div class="card">
                         <div class="card-horizontal">
                             <div class="img-square-wrapper">
-                                <img class="img-card" src="img/Frame2.jpg" alt="Card image cap">
+                                <img class="img-card" src="img/image10.png" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">WOMEN’S WEAR</h5>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <!-- <h5 class="card-title">MEN’S WEAR</h5> -->
+                                <p class="card-text" style="font-size: small;">TROUSER’S(LONG/SHORT’S)<br> LAUNDRY - RM10.00 DRYCLEAN RM15.00<br> IRONING - RM16.00</p>
                             </div>
                         </div>
                         <!-- <div class="card-footer">
@@ -151,11 +151,11 @@
                     <div class="card">
                         <div class="card-horizontal">
                             <div class="img-square-wrapper">
-                                <img class="img-card" src="img/Frame3.jpg" alt="Card image cap">
+                                <img class="img-card" src="img/image11.png" alt="Card image cap">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">LINEN</h5>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <!-- <h5 class="card-title">MEN’S WEAR</h5> -->
+                                <p class="card-text" style="font-size: small;">HOODIES&SWEATER’S<br> LAUNDRY - RM11.00 DRYCLEAN RM17.00<br> IRONING - RM20.00</p>
                             </div>
                         </div>
                         <!-- <div class="card-footer">
@@ -189,34 +189,25 @@
                 margin: 1.75rem auto;
             }
         }
-        
-        .modal-body {
-            position: relative;
-            -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-            padding: 0rem;
-        }
     </style>
     <div class="modal fade modal-lg " id="modalMen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <div class="modal-header bg-info text-light">
+                <div class="modal-header bg-info text-light">
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button> -->
-            </div>
-            <div class="modal-body" style="height:800px">
-                <div class="embed-responsive embed-responsive-16by9" style="height:800px">
-                    <iframe class="embed-responsive-item" src="./order.html"></iframe>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Save changes</button>
                 </div>
             </div>
-            <div class="modal-footer" style="background-color: white;">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-info">Save changes</button>
-            </div>
         </div>
-    </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->
