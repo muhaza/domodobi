@@ -69,11 +69,11 @@
                 <h2 style="font-family: 'Oswald';">DOMO LAYAN DIRI</h2>
                 <ul class="nav nav-pills nav-fill">
                     <li class="nav-item">
-                        <a class="nav-link active bg-info text-light" style="border:1px white solid" href="#">📋 Order
+                        <a class="nav-link active bg-info text-light" style="border:1px white solid" href="#" data-toggle="modal" data-target="#modalHistory" type="button">📋 Order
                                                             History</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link bg-info text-light" style="border:1px white solid" href="#">🛒 My Cart</a>
+                        <a class="nav-link bg-info text-light" style="border:1px white solid" href="#" data-toggle="modal" data-target="#modalMen" type="button">🛒 My Cart</a>
                     </li>
                 </ul>
             </div>
@@ -213,14 +213,34 @@
                         </button> -->
             </div>
             <div class="modal-body" style="height:800px">
-                <div class="embed-responsive embed-responsive-16by9" style="height:800px">
-                    <iframe class="embed-responsive-item" src="./order.html"></iframe>
+                <div class="embed-responsive embed-responsive-16by9" style="height:500px">
+                    <iframe class="embed-responsive-item" src="./cart.html"></iframe>
                 </div>
             </div>
-            <div class="modal-footer" style="background-color: white;">
+            <!-- <div class="modal-footer" style="background-color: white;">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-info">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="modal fade modal-lg " id="modalHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header bg-info text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
             </div>
+            <div class="modal-body" style="height:700px">
+                <div class="embed-responsive embed-responsive-16by9" style="height:500px">
+                    <iframe class="embed-responsive-item" src="./history.html"></iframe>
+                </div>
+            </div>
+            <!-- <div class="modal-footer" style="background-color: white;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info">Save changes</button>
+            </div> -->
         </div>
     </div>
     </div>
