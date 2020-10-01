@@ -4593,7 +4593,7 @@ input[type=submit].btn-block {
     display: inline-block;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
-    margin-right: 50%;
+    margin-right: 40%;
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap
@@ -5026,7 +5026,7 @@ input[type=submit].btn-block {
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
-    color:black;
+    color: black;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem
